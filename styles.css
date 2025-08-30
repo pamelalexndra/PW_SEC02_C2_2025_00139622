@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #6aaf5f;
+  color: white;
+  padding: 65px 25px;
+}
+
+.header h1 {
+  font-size: 62px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  flex: 1;
+  color: black;
+}
+
+.column {
+  flex: 1;
+  padding: 25px;
+}
+
+.column h2 {
+  font-size: 42px;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.column p {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.footer {
+  display: flex;
+  background-color: #4a90e2;
+  color: white;
+  position: relative; 
+  justify-content: space-between;
+  padding: 65px 25px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer h2 {
+  font-size: 62px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.controls {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 15px 25px;
+  border-bottom: 2px solid #ddd;
+}
+
+.controls button {
+  background-color: #1e9ecc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+.controls button.secondary {
+  background-color: #2196f3;
+}
+
+.controls button:active {
+  transform: scale(0.95);   
+  background: #004f82;
+}
+
+.footer-img {
+  width: 300px;   
+  height: auto;   
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .column {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .column:last-child {
+    border-bottom: none;
+  }
+}
